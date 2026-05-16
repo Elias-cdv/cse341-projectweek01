@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 ### PUT - UPDATE CONTACT (Reemplaza el ID de la URL con el que te dio el POST)
-PUT http://localhost:8080/contacts/AQUÍ_PONES_EL_ID_DEL_NUEVO_CONTACTO
+PUT http://localhost:8080/contacts/6a08c18612a79bd878892ed8
 Content-Type: application/json
 
 {
@@ -35,4 +35,4 @@ Content-Type: application/json
 }
 
 ### DELETE CONTACT (Reemplaza con el mismo ID para borrarlo)
-DELETE http://localhost:8080/contacts/AQUÍ_PONES_EL_ID_A_BORRAR
+DELETE http://localhost:8080/contacts/6a08c18612a79bd878892ed8
