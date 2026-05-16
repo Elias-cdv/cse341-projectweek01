@@ -3,3 +3,36 @@ GET http://localhost:8080/contacts
 
 ### O los que sale en tu base de datos
 GET http://localhost:8080/contacts/69ff75db3d2684ff1a6b408d
+
+### GET ALL CONTACTS
+GET http://localhost:8080/contacts
+
+### GET CONTACT BY ID (Reemplaza con un ID real de tu MongoDB)
+GET http://localhost:8080/contacts/6451a2b3c4d5e6f7a8b9c0d1
+
+### POST - CREATE CONTACT
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Juan",
+  "lastName": "Cañizares",
+  "email": "juanc@testcom",
+  "favoriteColor": "Negro",
+  "birthday": "2000-01-01"
+}
+
+### PUT - UPDATE CONTACT (Reemplaza el ID de la URL con el que te dio el POST)
+PUT http://localhost:8080/contacts/AQUÍ_PONES_EL_ID_DEL_NUEVO_CONTACTO
+Content-Type: application/json
+
+{
+  "firstName": "Juan",
+  "lastName": "Cañizares",
+  "email": "juanc_nuevo@test.com",
+  "favoriteColor": "Verde Bosque",
+  "birthday": "2000-01-01"
+}
+
+### DELETE CONTACT (Reemplaza con el mismo ID para borrarlo)
+DELETE http://localhost:8080/contacts/AQUÍ_PONES_EL_ID_A_BORRAR
