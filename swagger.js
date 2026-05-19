@@ -5,12 +5,13 @@ const doc = {
     title: "My Contacts API",
     description: "Contact API for W02 Project",
   },
-  host: "localhost:8080",
-  schemes: ["http", "https"],
+  // 1. AQUÍ CAMBIAS POR TU LINK DE RENDER (Sin el https:// ni barras al final)
+  host: "cse341-projectweek01.onrender.com",
+  // 2. EN RENDER USAMOS SOLO HTTPS
+  schemes: ["https"],
 };
 
-const outputFile = "./swagger.json"; // El archivo que se va a generar
-const endpointsFiles = ["./routes/index.js"]; // Apunta a tu archivo principal de rutas
+const outputFile = "./swagger.json";
+const endpointsFiles = ["./routes/index.js"];
 
-// Esto genera el swagger.json
 swaggerAutogen(outputFile, endpointsFiles, doc);

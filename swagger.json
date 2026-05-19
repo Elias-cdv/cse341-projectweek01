@@ -5,10 +5,9 @@
     "description": "Contact API for W02 Project",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-projectweek01.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
